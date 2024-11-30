@@ -1,0 +1,67 @@
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: flex-end; /* Aligns navigation to the right */
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    align-items: center; /* Vertically centers the nav */
+   
+    color: #b3b3b3;
+    position: relative;
+}
+
+/* Title (Logo) - Optional if you want to keep a title on the left */
+header h2 {
+    position: absolute;
+    left: 1rem; /* Keeps the title on the left side */
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+header h2::after {
+    content: "";
+    width: 20%;
+    height: 0.1rem;
+    background-image: linear-gradient(to right, #1db954, red);
+    position: absolute;
+    top: 90%;
+    left: 0%;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    gap: 1rem; /* Adds spacing between buttons */
+}
+
+/* Navigation Buttons */
+nav button {
+    background-color: white;
+    color: rgb(48, 39, 39);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer; /* Pointer cursor for hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover Effects for Buttons */
+nav button:hover {
+    background-color: white; /* Green background */
+    color:  #E85A47; /* White text */
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack items in small screens */
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+}
