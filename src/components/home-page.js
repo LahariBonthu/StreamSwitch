@@ -5,15 +5,14 @@ import Navbar from './navbar';
 // Authentication function for Spotify
 function authenticate() {
     const CLIENT_ID = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
+    console.log('Spotify Client ID:', CLIENT_ID); // Log the value
     const REDIRECT_URI = 'https://streamswitch.vercel.app/playlists';
     const AUTH_URL = 'https://accounts.spotify.com/authorize';
     const SCOPES = 'user-read-private user-read-email playlist-read-private';
     const authUrl = `${AUTH_URL}?response_type=code&client_id=${CLIENT_ID}&redirect_uri=${encodeURIComponent(REDIRECT_URI)}&scope=${encodeURIComponent(SCOPES)}`;
     window.location.href = authUrl;
-
-    //const authUrl = `${AUTH_URL}?response_type=code&client_id=${CLIENT_ID}&redirect_uri=${encodeURIComponent(REDIRECT_URI)}&scope=${encodeURIComponent(SCOPES)}`;
-    //window.location.href = authUrl;
 }
+
 
 function LoadHome() {
     useEffect(() => {
