@@ -122,7 +122,7 @@ function LoadPlaylists() {
 
             <div id="playlists-wrapper">
                 <div id="playlist-module">
-                    <h2>Now converting</h2>
+                    <h2>Switching Starts</h2>
                     {playlists.length > 0 ? (
                         <select
                             id="playlists"
