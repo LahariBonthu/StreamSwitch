@@ -133,11 +133,13 @@ function LoadPlaylists() {
                                 )
                             }
                         >
-                            {playlists.map((playlist, index) => (
-                                <option key={playlist.id} value={playlist.id}>
-                                    {playlist.name}
-                                </option>
-                            ))}
+                            {playlists
+                                .filter((playlist) => playlist != null) // Ensure playlists are valid
+                                .map((playlist, index) => (
+                                    <option key={playlist.id} value={playlist.id}>
+                                        {playlist.name}
+                                    </option>
+                                ))}
                         </select>
                     ) : (
                         <p>No playlists available.</p>
