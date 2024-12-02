@@ -1,4 +1,4 @@
-#playlists-wrapper {
+#playlists-wrapper{
     display: flex;
     height: calc(100vh - 6rem);
     width: 100%;
@@ -6,10 +6,10 @@
     align-items: center;
 }
 
-#playlist-module {
+#playlist-module{
     width: calc(20vw - 2rem);
     min-width: calc(20vw - 2rem);
-    outline: 1px solid black;
+    outline: 1px solid #b3b3b3b8;
     border-radius: 2rem;
     height: calc(80vh - 2rem);
     display: flex;
@@ -21,20 +21,20 @@
     text-align: center;
 }
 
-#playlist-module * {
+#playlist-module *{
     color: #535353 !important;
 }
 
-#playlists {
+#playlists{
     display: flex;
     height: 15rem;
     width: 15rem;
-    border-radius: 0; /* Removes circular shape and makes it rectangular */
+    border-radius: 100%;
     text-wrap: wrap;
     color: #1db954 !important;
 }
 
-#button-row {
+#button-row{
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -42,7 +42,7 @@
     width: 100%;
 }
 
-#button-row button {
+#button-row button{
     height: 100%;
     display: flex;
     justify-content: center;
@@ -57,11 +57,11 @@
     transition: all 0.15s ease-in-out;
 }
 
-#button-row button:hover {
+#button-row button:hover{
     background-color: #1db954;
 }
 
-#button-row button:nth-child(2) {
+#button-row button:nth-child(2){
     border-radius: 2rem;
     padding: 0px 2rem;
     font-size: medium;
@@ -81,6 +81,25 @@ option {
     background-color: black;
 }
 
-#playlist-module p {
+#playlist-module p{
     font-size: small !important;
 }
+
+@media (orientation :portrait) {
+    #playlist-module{
+        width: 80%;
+    }
+}
+
+@media screen and (width: 1024px) {
+    #playlist-module {
+        width: calc(30vw - 2rem);
+    }
+}
+
+@media screen and (width: 768px) {
+    #playlist-module {
+        width: calc(35vw - 2rem);
+    }
+}
+
