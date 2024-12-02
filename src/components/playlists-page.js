@@ -10,13 +10,13 @@ const REDIRECT_URI = "https://streamswitch.vercel.app/playlists";
 const TOKEN_URL = "https://accounts.spotify.com/api/token";
 
 function next(playlists, currentIndex, setCurrentIndex) {
-    if (playlists.length === 0) return; // Prevent errors when playlists is empty
+    if (playlists.length === 0) return;
     const newIndex = (currentIndex + 1) % playlists.length;
     setCurrentIndex(newIndex);
 }
 
 function previous(playlists, currentIndex, setCurrentIndex) {
-    if (playlists.length === 0) return; // Prevent errors when playlists is empty
+    if (playlists.length === 0) return;
     const newIndex = (currentIndex - 1 + playlists.length) % playlists.length;
     setCurrentIndex(newIndex);
 }
@@ -133,13 +133,11 @@ function LoadPlaylists() {
                                 )
                             }
                         >
-                            {playlists
-                                .filter((playlist) => playlist != null) // Ensure playlists are valid
-                                .map((playlist, index) => (
-                                    <option key={playlist.id} value={playlist.id}>
-                                        {playlist.name}
-                                    </option>
-                                ))}
+                            {playlists.map((playlist) => (
+                                <option key={playlist.id} value={playlist.id}>
+                                    {playlist.name}
+                                </option>
+                            ))}
                         </select>
                     ) : (
                         <p>No playlists available.</p>
@@ -162,9 +160,9 @@ function LoadPlaylists() {
                     </div>
 
                     <p>
-                        Choose a playlist to convert to Youtube music. The playlist in the
-                        title will be selected. Use the nav buttons (Previous, Next) or
-                        choose from the dropdown.
+                        Choose a playlist to convert to YouTube Music. The playlist in the
+                        dropdown will be selected. Use the navigation buttons (Previous, Next) or
+                        select directly from the dropdown.
                     </p>
                 </div>
             </div>
