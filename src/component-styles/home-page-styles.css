@@ -158,7 +158,7 @@ button:hover {
     left: 0%;
     width: 200px; /* Adjust size */
     height: 200px; /* Adjust size */
-    background-image: url('/public/disk.jpg'); /* Replace with your image */
+    background-image: url('/disk.jpg'); /* Replace with your image */
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -170,7 +170,7 @@ button:hover {
     left: 0%;
     width: 350px; /* Adjust size */
     height: 350px; /* Adjust size */
-    background-image: url('/public/log.jpg'); /* Replace with your image */
+    background-image: url('/log.jpg'); /* Replace with your image */
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -182,7 +182,7 @@ button:hover {
     right: 0%;
     width: 300px; /* Adjust size */
     height: 300px; /* Adjust size */
-    background-image: url('/public/emoji.jpg'); /* Replace with your image */
+    background-image: url('/emoji.jpg'); /* Replace with your image */
     background-size: cover;
     background-position: center;
     z-index: 1;
