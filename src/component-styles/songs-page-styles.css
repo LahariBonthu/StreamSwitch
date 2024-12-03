@@ -1,5 +1,5 @@
 *{
-    color: #b3b3b3;
+    color: #6a6969;
 }
 
 #wrapper{
@@ -33,7 +33,7 @@
 }
 
 #songs-to h2 i::after {
-    content: 'Please be aware that Switchify is still in development, and may encounter issues at times.';
+    content: 'Please be aware that StreamSwitch is still in development, and may encounter issues at times.';
     position: absolute;
     font-size: 1rem;
     font-family: 'space-grotesk';
