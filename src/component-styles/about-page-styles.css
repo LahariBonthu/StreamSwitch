@@ -1,5 +1,5 @@
 * {
-    color: white;
+    color: rgb(47, 44, 44);
 }
 
 body {
@@ -40,7 +40,7 @@ body {
 }
 
 #data h1 {
-    color: #1db954;
+    color: #e60808;
     text-align: center;
 }
 
