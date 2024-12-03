@@ -20,7 +20,7 @@ function LoadSongs() {
     const [currentSong, setCurrentSong] = useState(0);
 
     useEffect(() => {
-        document.title = 'Transfer | Switchify';
+        document.title = 'Transfer | StreamSwitch';
 
         let spotify_access_token = localStorage.getItem('spotify_access_token'); 
         if (spotify_access_token) {

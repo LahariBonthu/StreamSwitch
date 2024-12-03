@@ -22,18 +22,21 @@ function LoadAbout() {
                 <div id="about-wrapper">
                     <div id="data">
                         <h1>What is StreamSwitch?</h1>
-                        <p>
-                            <span>StreamSwitch is an application that makes it easy to move your playlists from Spotify to YouTube Music.</span>
-                            <span>Out of the frustration with Tune My Music’s limit of 200 songs per transfer, I created this application.</span>
-                            <span>As someone who loves music and often switches between platforms, </span>
-                            <span>I wanted something that worked better for people like me—and that’s how StreamSwitch was born.</span>
-                        </p>
+                        <p>StreamSwitch is an application that makes it easy to move your playlists from Spotify to YouTube Music.</p>
+                        <p>Out of the frustration with Tune My Music’s limit of 200 songs per transfer, I created this application.</p>
+                        <p>As someone who loves music and often switches between platforms, I wanted something that worked better for people like me—and that’s how StreamSwitch was born.</p>
 
                         <h1>Contact Me</h1>
                         <div id="contact">
-                            <a name="Github" href="https://github.com/LahariBonthu"><i className="fa-brands fa-github"></i></a>
-                            <a name="Linkedin" href="https://www.linkedin.com/in/bonthusailahari/"><i className="fa-brands fa-linkedin-in"></i></a>
-                            <a name="Mail" href="mailto:laharibonthu1882@gmail.com"><i className="fa-solid fa-envelope"></i></a>
+                            <a name="Github" href="https://github.com/LahariBonthu">
+                                <i className="fa-brands fa-github"></i>
+                            </a>
+                            <a name="Linkedin" href="https://www.linkedin.com/in/bonthusailahari/">
+                                <i className="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a name="Mail" href="mailto:laharibonthu1882@gmail.com">
+                                <i className="fa-solid fa-envelope"></i>
+                            </a>
                         </div>
                     </div>
                 </div>

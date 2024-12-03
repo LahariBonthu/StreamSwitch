@@ -35,11 +35,12 @@ function LoadHome() {
             <div id='content'>
                 <h1>StreamSwitch</h1>
                 <div>
-                    <p>Because, Spotify has lost its groove and is now playing a tuneless melody!</p>
-                    <p>
-                        Use Switchify to copy your playlist from Spotify to Youtube Music.
-                        And start grooving again. (Ps: Youtube has almost all tracks)
-                    </p>
+                <p>Spotify seems to have lost its rhythm, leaving you stuck on a broken record!</p>
+                <p>
+                   Use StreamSwitch and effortlessly transfer your playlist from Spotify to YouTube Music. 
+                   Get back to vibing with an endless library of tracks. (P.S.: YouTube has nearly everything!)
+                </p>
+   
                 </div>
                 <button onClick={authenticate} id='switch'>Switch to Youtube Music</button>
             </div>
