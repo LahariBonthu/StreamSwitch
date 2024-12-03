@@ -22,11 +22,11 @@ function LoadAbout() {
                 <div id="about-wrapper">
                     <div id="data">
                         <h1>What is StreamSwitch?</h1>
-                        <p>StreamSwitch is an application that makes it easy to move your playlists from Spotify to YouTube Music.</p>
-                        <p>Out of the frustration with Tune My Music’s limit of 200 songs per transfer, I created this application.</p>
-                        <p>As someone who loves music and often switches between platforms,</p>
-                        <p>I wanted something that worked better for people like me—and that’s how StreamSwitch was born.</p>
-
+                             StreamSwitch is an application that makes it easy to move your playlists 
+                             from Spotify to YouTube Music. Out of the frustration with Tune My Music’s 
+                             limit of 200 songs per transfer, I created this application. As someone who 
+                             loves music and often switches between platforms, I wanted something that 
+                             worked better for people like me—and that’s how StreamSwitch was born.
                         <h1>Contact Me</h1>
                         <div id="contact">
                             <a name="Github" href="https://github.com/LahariBonthu">
