@@ -2,7 +2,7 @@
  
  Streamswitch is an effecient playlist transfer website that does copy playlists from Spotify to Youtube Music. I started this project as an alternative of Tune My Music, which won't allow users to transfer more than 200 songs in a go.I wanted something that worked better for people like me—and that’s how StreamSwitch was born.
 
-***Switchify does not store any data. Every password you enter is either in Google's in Spotify's authentication page.***
+***StreamSwitch does not store any data. Every password you enter is either in Google's in Spotify's authentication page.***
 <br><br>
 
 # Website
@@ -40,6 +40,25 @@ This marks the end of the functionality of the website.
 
 The website also features a simple about page that displays the basic information of the application and contact details of the developer (that's me).
 
+![Popup](https://github.com/LahariBonthu/StreamSwitch/blob/main/images/about.png)
+
+# Design Idea
+
+I mainly used green and red colours to symbolize Spotify and Youtube Music
+
+# Technologies Used
+
+React JS
+CSS
+
+# APIs Used
+
+Spotify Web API
+YouTube Data API v3
+
+# Clouds Used
+
+Vercel (for web deployment)
 
 
 

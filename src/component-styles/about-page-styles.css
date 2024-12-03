@@ -91,7 +91,7 @@ body {
 }
 
 #contact a:hover {
-    color: #1db954;
+    color:  #E85A4F;
     transform: scale(1.1);
 }
 
@@ -100,7 +100,7 @@ body {
 }
 
 #contact a:hover i {
-    filter: drop-shadow(0px 0px 10px #1db954);
+    filter: drop-shadow(0px 0px 10px  #E85A4F);
 }
 
 #contact a::after {
