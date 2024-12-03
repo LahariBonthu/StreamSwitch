@@ -49,16 +49,18 @@ I mainly used green and red colours to symbolize Spotify and Youtube Music
 # Technologies Used
 
 React JS
+
 CSS
 
 # APIs Used
 
 Spotify Web API
+
 YouTube Data API v3
 
 # Clouds Used
 
-Vercel (for web deployment)
+Vercel (web deployment)
 
 
 
