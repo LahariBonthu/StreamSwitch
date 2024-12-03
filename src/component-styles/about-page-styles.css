@@ -1,12 +1,18 @@
+/* Global Styling */
 * {
-    color: #6a6969;
+    color: #4a4a4a;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     height: 100%;
     width: 100%;
+    background-color: #f9f9f9;
 }
 
 #about-content {
@@ -15,101 +21,117 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center; /* Center-align text */
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(to bottom, #ffffff, #f2f2f2);
 }
 
 #about-wrapper {
-    height: auto; /* Allow flexible height */
+    height: auto;
     display: flex;
-    flex-direction: column; /* Vertical alignment */
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 70%;
-    gap: 0.75rem; /* Reduced gap for compact layout */
-    padding: 2rem; /* Added padding for a neat look */
+    justify-content: flex-start;
+    width: 65%;
+    max-width: 800px;
+    gap: 1rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem 1.5rem;
 }
 
 #data {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center align content */
-    justify-content: center; /* Center align vertically */
-    gap: 0.5rem; /* Reduced gap between paragraphs */
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
     width: 100%;
-    padding: 1rem 0rem;
-    line-height: 1.6; /* Adjusted line spacing for better readability */
+    line-height: 1.8;
+    color: #555555;
 }
 
 #data h1 {
     color: #E85A4F;
-    text-align: center;
-    margin-bottom: 1rem; /* Added margin for better separation */
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+#data p {
+    font-size: 1rem;
+    color: #6a6a6a;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 #contact {
     display: flex;
-    justify-content: center; /* Center-align contact links */
-    gap: 1.5rem; /* Reduced gap between icons */
-    transition: all 0.15s ease-in-out;
-    margin-top: 1rem; /* Added margin for separation from the text */
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
 }
 
 #contact a {
     background-color: transparent;
     border: none;
-    font-size: 1.75rem; /* Adjusted size for icons */
+    font-size: 1.8rem;
     display: flex;
-    gap: 0.15rem;
     flex-direction: column;
     position: relative;
-    transition: all 0.15s ease-in-out;
+    transition: all 0.2s ease-in-out;
     text-decoration: none;
-    color: inherit; /* Use default text color */
+    color: #6a6a6a;
 }
 
 #contact a:hover {
-    cursor: pointer;
+    color: #1db954;
+    transform: scale(1.1);
+}
+
+#contact a i {
+    transition: all 0.2s ease-in-out;
 }
 
 #contact a:hover i {
-    filter: drop-shadow(0px 0px 10px #1db954); /* Slightly reduced glow */
+    filter: drop-shadow(0px 0px 10px #1db954);
 }
 
 #contact a::after {
     content: attr(name);
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     position: absolute;
-    align-self: center;
-    padding-top: 0.25rem;
+    top: 2.5rem;
     opacity: 0;
-    transition: all 0.15s ease-in-out;
+    transform: translateY(-10px);
+    transition: all 0.2s ease-in-out;
+    color: #6a6a6a;
 }
 
 #contact a:hover::after {
     opacity: 1;
-    transform: translate(0, 2rem);
+    transform: translateY(0);
 }
 
-@media (orientation: portrait) {
+@media (max-width: 768px) {
     #about-wrapper {
-        flex-direction: column;
-        width: 100%;
-        height: auto; /* Allow flexible height in portrait mode */
-        gap: 1rem;
-        padding: 1rem;
+        width: 90%;
+        padding: 1.5rem 1rem;
     }
 
-    #data {
-        width: 100%;
-        gap: 0.75rem; /* Consistent spacing */
+    #data h1 {
+        font-size: 1.5rem;
+    }
+
+    #data p {
+        font-size: 0.9rem;
     }
 
     #contact {
-        flex-wrap: wrap;
-        gap: 1rem; /* Adjusted gap for wrapped icons */
+        gap: 0.8rem;
     }
 
-    p {
-        overflow: auto;
+    #contact a {
+        font-size: 1.5rem;
     }
 }
