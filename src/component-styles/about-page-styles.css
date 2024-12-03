@@ -1,8 +1,8 @@
-*{
+* {
     color: white;
 }
 
-body{
+body {
     margin: 0px;
     padding: 0px;
     height: 100%;
@@ -10,53 +10,38 @@ body{
 }
 
 #about-content {
-    height: calc(100vh - 7rem);;
+    height: calc(100vh - 7rem);
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center; /* Center-align text */
 }
 
-#about-wrapper{
+#about-wrapper {
     height: 25rem;
     display: flex;
+    flex-direction: column; /* Change to column for vertical alignment */
+    align-items: center;
+    justify-content: center;
     width: 70%;
-    gap: 2rem;
+    gap: 1rem;
 }
 
-#profile {
-    width: 40%;
-    border-radius: 1rem;
-    background-image: 
-        linear-gradient(to bottom, transparent, black), 
-        url('/public/profile.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-}
-
-#profile::after{
-    content: 'Venu Pulagam';
-    align-self: flex-end;
-    padding: 1rem;
-    font-family: 'space-grotesk';
-    font-weight: bold;
-    color: #b3b3b3;
-    font-size: 2rem;
-}
-
-#data{
-    overflow: auto;
+#data {
     display: flex;
     flex-direction: column;
+    align-items: center; /* Center align content */
+    justify-content: center; /* Center align vertically */
     gap: 1rem;
     height: 100%;
-    width: 60%;
+    width: 100%;
     padding: 1rem 0rem;
 }
 
-#data h1{
+#data h1 {
     color: #1db954;
+    text-align: center;
 }
 
 #data h1:nth-child(3) {
@@ -65,6 +50,7 @@ body{
 
 #contact {
     display: flex;
+    justify-content: center; /* Center-align contact links */
     gap: 2rem;
     transition: all 0.15s ease-in-out;
 }
@@ -75,13 +61,13 @@ body{
     font-size: 2rem;
     display: flex;
     gap: 0.15rem;
-    flex-direction: column; 
+    flex-direction: column;
     position: relative;
     transition: all 0.15s ease-in-out;
     text-decoration: none;
 }
 
-#contact a:hover{
+#contact a:hover {
     cursor: pointer;
 }
 
@@ -104,30 +90,24 @@ body{
     transform: translate(0, 2rem);
 }
 
-@media (orientation:portrait) {
-    #about-wrapper{
+@media (orientation: portrait) {
+    #about-wrapper {
         flex-direction: column;
         width: 100%;
         height: calc(100vh - 7rem);
         gap: 1rem;
     }
 
-    #data{
+    #data {
         width: 100%;
         gap: 1rem;
-        
     }
 
-    #profile{
-        height: 50%;
-        width: 100%;
-    }
-
-    #contact{
+    #contact {
         flex-wrap: wrap;
     }
 
-    p{
+    p {
         overflow: auto;
     }
 }
